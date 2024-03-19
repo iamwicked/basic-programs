@@ -165,7 +165,7 @@ public class micropcalc extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
         String s = e.getActionCommand();
-        if (s.equals("1")) {
+        if ("1".equals(s)) {
             if (z == 0) {
                 tfield.setText(tfield.getText() + "1");
             } else {
@@ -175,7 +175,7 @@ public class micropcalc extends JFrame implements ActionListener {
             }
         }
 
-        if (s.equals("2")) {
+        if ("2".equals(s)) {
             if (z == 0) {
                 tfield.setText(tfield.getText() + "2");
             } else {
@@ -185,7 +185,7 @@ public class micropcalc extends JFrame implements ActionListener {
             }
         }
 
-        if (s.equals("3")) {
+        if ("3".equals(s)) {
             if (z == 0) {
                 tfield.setText(tfield.getText() + "3");
             } else {
@@ -195,7 +195,7 @@ public class micropcalc extends JFrame implements ActionListener {
             }
         }
 
-        if (s.equals("4")) {
+        if ("4".equals(s)) {
             if (z == 0) {
                 tfield.setText(tfield.getText() + "4");
             } else {
@@ -205,7 +205,7 @@ public class micropcalc extends JFrame implements ActionListener {
             }
         }
 
-        if (s.equals("5")) {
+        if ("5".equals(s)) {
             if (z == 0) {
                 tfield.setText(tfield.getText() + "5");
             } else {
@@ -215,7 +215,7 @@ public class micropcalc extends JFrame implements ActionListener {
             }
         }
 
-        if (s.equals("6")) {
+        if ("6".equals(s)) {
             if (z == 0) {
                 tfield.setText(tfield.getText() + "6");
             } else {
@@ -225,7 +225,7 @@ public class micropcalc extends JFrame implements ActionListener {
             }
         }
 
-        if (s.equals("7")) {
+        if ("7".equals(s)) {
             if (z == 0) {
                 tfield.setText(tfield.getText() + "7");
             } else {
@@ -234,7 +234,7 @@ public class micropcalc extends JFrame implements ActionListener {
                 z = 0;
             }
         }
-        if (s.equals("8")) {
+        if ("8".equals(s)) {
             if (z == 0) {
                 tfield.setText(tfield.getText() + "8");
             } else {
@@ -243,7 +243,7 @@ public class micropcalc extends JFrame implements ActionListener {
                 z = 0;
             }
         }
-        if (s.equals("9")) {
+        if ("9".equals(s)) {
             if (z == 0) {
                 tfield.setText(tfield.getText() + "9");
             } else {
@@ -252,7 +252,7 @@ public class micropcalc extends JFrame implements ActionListener {
                 z = 0;
             }
         }
-        if (s.equals("0")) {
+        if ("0".equals(s)) {
             if (z == 0) {
                 tfield.setText(tfield.getText() + "0");
             } else {
@@ -261,14 +261,14 @@ public class micropcalc extends JFrame implements ActionListener {
                 z = 0;
             }
         }
-        if (s.equals("AC")) {
+        if ("AC".equals(s)) {
             tfield.setText("");
             x = 0;
             y = 0;
             z = 0;
         }
-        if (s.equals("log")) {
-            if (tfield.getText().equals("")) {
+        if ("log".equals(s)) {
+            if ("".equals(tfield.getText())) {
                 tfield.setText("");
             } else {
                 a = Math.log(Double.parseDouble(tfield.getText()));
@@ -276,8 +276,8 @@ public class micropcalc extends JFrame implements ActionListener {
                 tfield.setText(tfield.getText() + a);
             }
         }
-        if (s.equals("1/x")) {
-            if (tfield.getText().equals("")) {
+        if ("1/x".equals(s)) {
+            if ("".equals(tfield.getText())) {
                 tfield.setText("");
             } else {
                 a = 1 / Double.parseDouble(tfield.getText());
@@ -285,8 +285,8 @@ public class micropcalc extends JFrame implements ActionListener {
                 tfield.setText(tfield.getText() + a);
             }
         }
-        if (s.equals("Exp")) {
-            if (tfield.getText().equals("")) {
+        if ("Exp".equals(s)) {
+            if ("".equals(tfield.getText())) {
                 tfield.setText("");
             } else {
                 a = Math.exp(Double.parseDouble(tfield.getText()));
@@ -294,8 +294,8 @@ public class micropcalc extends JFrame implements ActionListener {
                 tfield.setText(tfield.getText() + a);
             }
         }
-        if (s.equals("x^2")) {
-            if (tfield.getText().equals("")) {
+        if ("x^2".equals(s)) {
+            if ("".equals(tfield.getText())) {
                 tfield.setText("");
             } else {
                 a = Math.pow(Double.parseDouble(tfield.getText()), 2);
@@ -303,8 +303,8 @@ public class micropcalc extends JFrame implements ActionListener {
                 tfield.setText(tfield.getText() + a);
             }
         }
-        if (s.equals("x^3")) {
-            if (tfield.getText().equals("")) {
+        if ("x^3".equals(s)) {
+            if ("".equals(tfield.getText())) {
                 tfield.setText("");
             } else {
                 a = Math.pow(Double.parseDouble(tfield.getText()), 3);
@@ -312,7 +312,7 @@ public class micropcalc extends JFrame implements ActionListener {
                 tfield.setText(tfield.getText() + a);
             }
         }
-        if (s.equals("+/-")) {
+        if ("+/-".equals(s)) {
             if (x == 0) {
                 tfield.setText("-" + tfield.getText());
                 x = 1;
@@ -320,7 +320,7 @@ public class micropcalc extends JFrame implements ActionListener {
                 tfield.setText(tfield.getText());
             }
         }
-        if (s.equals(".")) {
+        if (".".equals(s)) {
             if (y == 0) {
                 tfield.setText(tfield.getText() + ".");
                 y = 1;
@@ -328,8 +328,8 @@ public class micropcalc extends JFrame implements ActionListener {
                 tfield.setText(tfield.getText());
             }
         }
-        if (s.equals("+")) {
-            if (tfield.getText().equals("")) {
+        if ("+".equals(s)) {
+            if ("".equals(tfield.getText())) {
                 tfield.setText("");
                 temp = 0;
                 ch = '+';
@@ -342,8 +342,8 @@ public class micropcalc extends JFrame implements ActionListener {
             }
             tfield.requestFocus();
         }
-        if (s.equals("-")) {
-            if (tfield.getText().equals("")) {
+        if ("-".equals(s)) {
+            if ("".equals(tfield.getText())) {
                 tfield.setText("");
                 temp = 0;
                 ch = '-';
@@ -356,8 +356,8 @@ public class micropcalc extends JFrame implements ActionListener {
             }
             tfield.requestFocus();
         }
-        if (s.equals("/")) {
-            if (tfield.getText().equals("")) {
+        if ("/".equals(s)) {
+            if ("".equals(tfield.getText())) {
                 tfield.setText("");
                 temp = 1;
                 ch = '/';
@@ -370,8 +370,8 @@ public class micropcalc extends JFrame implements ActionListener {
             }
             tfield.requestFocus();
         }
-        if (s.equals("*")) {
-            if (tfield.getText().equals("")) {
+        if ("*".equals(s)) {
+            if ("".equals(tfield.getText())) {
                 tfield.setText("");
                 temp = 1;
                 ch = '*';
@@ -384,15 +384,15 @@ public class micropcalc extends JFrame implements ActionListener {
             }
             tfield.requestFocus();
         }
-        if (s.equals("MC")) {
+        if ("MC".equals(s)) {
             m1 = 0;
             tfield.setText("");
         }
-        if (s.equals("MR")) {
+        if ("MR".equals(s)) {
             tfield.setText("");
             tfield.setText(tfield.getText() + m1);
         }
-        if (s.equals("M+")) {
+        if ("M+".equals(s)) {
             if (k == 1) {
                 m1 = Double.parseDouble(tfield.getText());
                 k++;
@@ -401,7 +401,7 @@ public class micropcalc extends JFrame implements ActionListener {
                 tfield.setText("" + m1);
             }
         }
-        if (s.equals("M-")) {
+        if ("M-".equals(s)) {
             if (k == 1) {
                 m1 = Double.parseDouble(tfield.getText());
                 k++;
@@ -410,8 +410,8 @@ public class micropcalc extends JFrame implements ActionListener {
                 tfield.setText("" + m1);
             }
         }
-        if (s.equals("Sqrt")) {
-            if (tfield.getText().equals("")) {
+        if ("Sqrt".equals(s)) {
+            if ("".equals(tfield.getText())) {
                 tfield.setText("");
             } else {
                 a = Math.sqrt(Double.parseDouble(tfield.getText()));
@@ -419,8 +419,8 @@ public class micropcalc extends JFrame implements ActionListener {
                 tfield.setText(tfield.getText() + a);
             }
         }
-        if (s.equals("SIN")) {
-            if (tfield.getText().equals("")) {
+        if ("SIN".equals(s)) {
+            if ("".equals(tfield.getText())) {
                 tfield.setText("");
             } else {
                 a = Math.sin(Double.parseDouble(tfield.getText()));
@@ -428,8 +428,8 @@ public class micropcalc extends JFrame implements ActionListener {
                 tfield.setText(tfield.getText() + a);
             }
         }
-        if (s.equals("COS")) {
-            if (tfield.getText().equals("")) {
+        if ("COS".equals(s)) {
+            if ("".equals(tfield.getText())) {
                 tfield.setText("");
             } else {
                 a = Math.cos(Double.parseDouble(tfield.getText()));
@@ -437,8 +437,8 @@ public class micropcalc extends JFrame implements ActionListener {
                 tfield.setText(tfield.getText() + a);
             }
         }
-        if (s.equals("TAN")) {
-            if (tfield.getText().equals("")) {
+        if ("TAN".equals(s)) {
+            if ("".equals(tfield.getText())) {
                 tfield.setText("");
             } else {
                 a = Math.tan(Double.parseDouble(tfield.getText()));
@@ -446,8 +446,8 @@ public class micropcalc extends JFrame implements ActionListener {
                 tfield.setText(tfield.getText() + a);
             }
         }
-        if (s.equals("=")) {
-            if (tfield.getText().equals("")) {
+        if ("=".equals(s)) {
+            if ("".equals(tfield.getText())) {
                 tfield.setText("");
             } else {
                 temp1 = Double.parseDouble(tfield.getText());
@@ -470,8 +470,8 @@ public class micropcalc extends JFrame implements ActionListener {
                 z = 1;
             }
         }
-        if (s.equals("n!")) {
-            if (tfield.getText().equals("")) {
+        if ("n!".equals(s)) {
+            if ("".equals(tfield.getText())) {
                 tfield.setText("");
             } else {
                 a = fact(Double.parseDouble(tfield.getText()));
